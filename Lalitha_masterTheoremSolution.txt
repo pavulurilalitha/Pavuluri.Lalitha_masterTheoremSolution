@@ -1,0 +1,22 @@
+a) T (n) = 3T (n/2) + n
+complexity will be T (n) = 0(nlogn)
+****************************
+b) we can convert it in master theorem
+
+T(n)=64 T(n/8) - n2log n
+
+       =64 T(n/8) + n2log n-1
+
+       =64 T(n/8) + n2log (1/n)
+
+     here nlogba = n log864 = n2
+
+now,  n2log(1/n) > n2
+
+Then complexity will be O( n^2log 1/n)
+******************************************************
+ c) T (n) = 2nT (n/2) + n^n =⇒ Does not apply (a is not constant)
+****************************************************
+d) T (n) = 3T (n/3) + n/2 =⇒complexity will be T (n) = Θ(n log n) (Case 2)
+***************************************************
+e) T (n) = 7T (n/3) + n2 =⇒complexity will be T (n) = Θ(n^2)
